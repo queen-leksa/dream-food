@@ -29,6 +29,8 @@ for (let i = 1; i < data.length; i++) {
     products.push(new Product(data[i].split(";")));
 }
 
+
+
 router.get("/", (req, res) => {
     res.render("index", {
         title: "Здоровый образ жизни",
