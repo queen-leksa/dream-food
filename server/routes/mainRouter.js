@@ -38,5 +38,10 @@ router.get("/", (req, res) => {
         tableCaptions: data[0]
     });
 });
+router.get("/vegetables", (req, res) => {
+    res.render("category", {
+        title: "Овощи"
+    });
+});
 
 module.exports = router;
